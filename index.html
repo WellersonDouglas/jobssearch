@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<title>Aplicativo web de pesquisa de emprego</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- CDN para o Ionicons -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header>
+	<nav>
+		<div class="menu">
+			<img src="./assets/logo.png" alt="logo" id="logo" />
+			<ul class="web-menu">
+				<li>
+					<a href="#" class="active-menu">Página Principal</a>
+				</li>
+				<li>
+					<a href="#">Empregador</a>
+				</li>
+				<li>
+					<a href="#">Candidato</a>
+				</li>
+			</ul>
+
+			<div class="menu-end web-menu">
+				<a href="">Login</a>
+				<a href="" class="btn-orange">Inscrição</a>
+			</div>
+
+			<!-- Menu Mobile -->
+			<ul class="mob-menu">
+				<li>
+					<a href="#" class="active-menu">Página Principal</a>
+				</li>
+				<li>
+					<a href="#">Empregador</a>
+				</li>
+				<li>
+					<a href="#">Candidato</a>
+				</li>
+				<li>
+					<a href=""
+					class="btn-outline">Login</a>
+				</li>
+				<li>
+					<a href="" class="btn-orange">Inscrição</a>
+				</li>
+			</ul>
+
+			<div class="menu-btn">
+				<ion-icon name="menu" onclick="onToggleMenu()" id="menu-icon"></ion-icon>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- Hero -->
+<section class="hero">
+	<div class="content">
+		<h1>Encontre o trabalho do seu <span>Sonhos</span></h1>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum odit, id labore natus repellat recusandae eligendi similique. Dolorum, culpa!</p>
+			<h2>Palavra-chave :</h2>
+				<div>
+					<span>Web Designer</span>
+					<span>UI/UX Designer</span>
+					<span>Frontend</span>
+				</div>
+				<div class="search-box">
+					<div>
+						<img src="./assets/search.png" />
+						<input type="text" placeholder="Palavra-chave">
+					</div>
+					<div>
+						<img src="./assets/location.png" />
+						<input type="search" placeholder="Seixal,  Portugal">
+					</div>
+					<button class="btn-search">Pesquisar</button>
+				</div>
+	</div>
+	<img src="./assets/Image-herro.png" alt="hero" />
+</section>
+<!-- Companies -->
+<section class="companies">
+	<h4>
+		Junte-se às empresas mais <span>Conhecidas</span> do Mundo
+	</h4>
+		<div>
+			<img src="./assets/slack.png" />
+			<img src="./assets/microsoft.png" />
+			<img src="./assets/google.png" />
+			<img src="./assets/airbnb.png" />
+		</div>
+</section>
+<!-- Categories -->
+<section class="categories">
+	<h4>Escolha uma categorias</h4>
+	<h2>Nossas Categorias</h2>
+
+	<div class="categories-boxs">
+		<div class="box">
+			<img src="./assets/cat1.png" />
+			<div>
+				<h3>Marketing & Comunicação</h3>
+				<p>58 Vagas Disponíveis</p>
+			</div>
+		</div>
+		<!--  -->
+		<div class="box active-box">
+			<img src="./assets/cat2.png" />
+			<div>
+				<h3>UI/UX Design</h3>
+				<p>128 Vagas Disponíveis</p>
+			</div>
+		</div>
+		<!--  -->
+		<div class="box">
+			<img src="./assets/cat3.png" />
+			<div>
+				<h3>Gestão Financeira</h3>
+				<p>201 Vagas Disponíveis</p>
+			</div>
+		</div>
+		<!--  -->
+		<div class="box">
+			<img src="./assets/cat4.png" />
+			<div>
+				<h3>Gerência de projetos</h3>
+				<p>58 Vagas Disponíveis</p>
+			</div>
+		</div>
+		<!--  -->
+		<div class="box">
+			<img src="./assets/cat5.png" />
+			<div>
+				<h3>Consultoria Empresarial</h3>
+				<p>23 Vagas Disponíveis</p>
+			</div>
+		</div>
+		<!--  -->
+		<div class="box">
+			<img src="./assets/cat6.png" />
+			<div>
+				<h3>Designer Gráfico</h3>
+				<p>68 Vagas Disponíveis</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Profile -->
+<section class="profile">
+	<img src="./assets/profile-img.png"  />
+	<div>
+		<h3>Criar Perfil</h3>
+		<h2>Construa seu perfil de conta pessoal</h2>
+		<p>Crie uma conta para as informações de trabalho que você deseja,receber notificações diárias e você pode facilmente aplicar diretamente à empresa que você quer e criar uma conta agora gratuitamente</p>
+		<button class="btn-varient-two">Criar Perfil</button>
+	</div>
+</section>
+<!-- Works -->
+<section class="work">
+	<div>
+		<h3>Como funciona</h3>
+		<h2>Passo fácil para encontrar e
+		Aplique seu emprego dos sonhos</h2>
+		<p>Nós vamos ajudá-lo a encontrar seu emprego dos sonhos facilmente, deixe-nos
+		ajudá-lo a gerenciar tudo o que você precisa</p>
+		<br>
+			<div class="content-box-work">
+				<h3>Fácil de carregar seu melhor CV e Portofolio</h3>
+				<p>Você pode carregar seu currículo, CV e portofolio diretamente para Jobbb</p>
+				<br />
+
+				<h3>Você será notificado com todas as atualizações</h3>
+				<p>Seja notificado sobre novas vagas de emprego. marcado
+				entrevista e aplicação de emprego</p>
+				<br />
+
+				<h3>Inscreva-se para o seu emprego dos sonhos da melhor empresa</h3>
+				<p>Forneceremos recomendações para suas empresas de escolha de todo o mundo</p>
+				<br />
+			</div>
+
+	</div>
+<img src="./assets/work-img.png"  />
+</section>
+<!-- Subscribe -->
+<section class="subscribe">
+<div class="sub-box">
+<h2>Nunca quer perder alguma notícia de emprego?
+</h2>
+<div>
+	<input type="text" placeholder="Digite seu endereço de e-mail aqui..." />
+	<button class="btn-orange-sub">Inscrever</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+	<div>
+		<img src="./assets/logo.png" id="logo" />
+		<p>Joobs é a maior plataforma de talentos do Sudeste Asiático e Taiwan para desenvolvimento de carreira e recrutamento.</p>
+	</div>
+	<!--  -->
+	<div>
+		<h2>Empregador</h2>
+		<span>Quem somos</span>
+		<span>Carreiras</span>
+		<span>Blog</span>
+	</div>
+	<!--  -->
+	<div>
+		<h2>Encontre vagas com base em</h2>
+		<span>Centro de Ajuda</span>
+		<span>Localização do trabalho</span>
+		<span>Nome da empresa</span>
+	</div>
+	<!--  -->
+	<div>
+		<h2>Endereço</h2>
+		<span>hello@jobbb.com</span>
+		<span>JL. Setiabudhi No. 193 Sukasari, Bandung West Java, Indonesia</span>
+	</div>
+</footer>
+<footer class="copyright">
+	<p>&copy; 2022 Wellerson Douglas - Todos os direitos reservados.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
